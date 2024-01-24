@@ -967,12 +967,14 @@ class Game {
     backgroundMusic.pause();
     backgroundMusic.currentTime = 0;
 
-    let victoryMusic = new Audio("./audio/victory.wav");
+    let victoryMusic = new Audio("./audio/pokemon masters league.wav");
     victoryMusic.play();
   }
 }
 
-let backgroundMusic = new Audio("./audio/backgroundSong.wav");
+let backgroundMusic = new Audio("./audio/theme song.wav");
 let damageSound = new Audio("./audio/damage.wav");
-let pastelSound = new Audio("./audio/pastel.wav");
+let badgeSound = new Audio("./audio/badge.wav");
 let successSound = new Audio("./audio/success.wav");
+
+backgroundMusic.loop = true;
