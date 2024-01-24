@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cross</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.cdnfonts.com/css/depixel" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <!-- Initial screen of the page where the user will land and where they can start the game -->
+      <div id="start-screen">
+        <img src="./images/logo.png" alt="logo" width="40%" />
+        <br />
+        <div class="button-box">
+          <button id="play-button">Play now!</button>
+          <button id="instructions-button">Instructions</button>
+          <button id="credits-button">Credits</button>
+        </div>
+      </div>
+
+      <!-- Game screen where the game will take place -->
+      <div id="game-container">
+        <div id="player-hearts">
+          <h3 id="health-counter">Health:</h3>
+          <img id="heart-1" src="./images/life.png" alt="" />
+          <img id="heart-2" src="./images/life.png" alt="" />
+          <img id="heart-3" src="./images/life.png" alt="" />
+        </div>
+        <div id="badges">
+          <h3 id="badges-counter">Badges:</h3>
+          <img id="badge-1" src="./images/badge1.png" alt="" />
+          <img id="badge-2" src="./images/badge2.png" alt="" />
+          <img id="badge-3" src="./images/badge3.png" alt="" />
+          <img id="badge-4" src="./images/badge4.png" alt="" />
+          <img id="badge-5" src="./images/badge5.png" alt="" />
+          <img id="badge-6" src="./images/badge6.png" alt="" />
+          <img id="badge-7" src="./images/badge7.png" alt="" />
+          <img id="badge-8" src="./images/badge8.png" alt="" />
+        </div>
+      </div>
+      <div id="game-screen"></div>
+      <!-- Screen after the player loses the game and where they can restart it -->
+      <div id="end-screen">
+        <h1>Game Over</h1>
+        <br />
+        <button class="restart-button">Restart</button>
+      </div>
+      <div id="instructions-screen">
+        <div class="text-box">
+          <!-- <p>In the future change the prize for everytime you reach the end and comeback changes the pokemon</p>
+          <p>Making you catch all the pokemon</p> -->
+        </div>
+        <h3>Instructions</h3>
+        <ul>
+          <li>
+            <img src="./images/pikachu.gif" alt="pikachu" width="20%" />Avoid
+            the pokemon or you'll get rocked
+          </li>
+
+          <li>
+            <img src="./images/kyogre.gif" alt="kyogre" width="20%" />To cross
+            the river, you are going to have to jump to water pokemon, if you
+            miss, you'll drown
+          </li>
+
+          <li>
+            <img src="./images/badges.png" alt="trophie" width="27%" />Once you
+            collect a Pokemon gym badge, you have to bring it back to the start
+          </li>
+
+          <li class="instructions-motivation">
+            <strong
+              >Get all 8 of them to qualificate to Pokemon Masters
+              League!</strong
+            >
+          </li>
+        </ul>
+        <button class="restart-button">Back to menu?</button>
+      </div>
+      <div id="victory-screen">
+        <h1>
+          Congratulations! You are now able to enter the 2047 Pokemon Masters
+          League!
+        </h1>
+        <br />
+        <img src="./images/trophie.png" alt="trophie" width="20%" />
+        <br />
+        <button class="restart-button">Play again?</button>
+      </div>
+      <div id="credits-screen">
+        <h3>Credits</h3>
+        <div class="coding-credits">
+          <ul>
+            <li><strong>Coding</strong></li>
+            <li>Pedro Duarte</li>
+          </ul>
+          <ul>
+            <li><strong>Photoshop</strong></li>
+            <li>Pedro Duarte</li>
+          </ul>
+        </div>
+        <div class="remaining-credits">
+          <ul>
+            <li><strong>Programs used</strong></li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Ilustrator</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javasript</li>
+          </ul>
+          <ul>
+            <li><strong>Special thanks to:</strong></li>
+            <li>Pedro Duarte</li>
+            <li>Pokemon</li>
+          </ul>
+          <h4>Find me on:</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/pedro-duarte-99bba5203/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/pedro_bduarte/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button class="restart-button">Back to menu?</button>
+      </div>
+    </main>
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>
