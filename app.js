@@ -396,10 +396,10 @@ class Game {
     this.depositPrize = new DepositPrizeZone(this.gameScreen);
 
     // Player's life system
-    this.lives = 3;
+    this.lives = 5;
 
     // Controls of the gamespeed
-    this.gamespeed = 0.8;
+    this.gamespeed = 0.5;
 
     // Player's score system
     this.score = 0;
@@ -848,14 +848,23 @@ class Game {
     }
 
     // Check the amount of player lives to remove a heart image
-    if (this.lives === 2) {
+    if (this.lives === 4) {
       document.getElementById("heart-1").style.display = "none";
+    } else if (this.lives === 3) {
+      document.getElementById("heart-1").style.display = "none";
+      document.getElementById("heart-2").style.display = "none";
+    } else if (this.lives === 2) {
+      document.getElementById("heart-1").style.display = "none";
+      document.getElementById("heart-2").style.display = "none";
+      document.getElementById("heart-3").style.display = "none";
     } else if (this.lives === 1) {
       document.getElementById("heart-1").style.display = "none";
       document.getElementById("heart-2").style.display = "none";
+      document.getElementById("heart-3").style.display = "none";
+      document.getElementById("heart-4").style.display = "none";
     }
 
-    // Check the ammount of pastéis de nata to add them
+    // Check the ammount of badges to add them
     if (this.score === 1) {
       document.getElementById("badge-1").style.display = "block";
     } else if (this.score === 2) {
@@ -910,7 +919,7 @@ class Game {
       // When player reaches the deposit zone, remove prize in hand, add to total score and increase the overall speed of all obstacles.
       this.prizeInHand = false;
       this.score++;
-      this.gamespeed += 0.2;
+      this.gamespeed += 0.05;
       this.player.element.src = "./images/ash fte.png";
       successSound.play();
       console.log(`Game speed has now been increased to${this.gamespeed}`);
